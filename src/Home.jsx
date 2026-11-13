@@ -2,6 +2,29 @@ import { Link } from 'react-router-dom';
 import BorderGlow from './component/BorderGlow';
 import Footer from './Footer';
 import Header from "./Header"
+import jaaackImg from './assets/jaaack.jpg';
+import jaaackTrImg from './assets/jaaacktr.jpg';
+
+const channels = [
+  {
+    name: "Jaaack", handle: "@jaaackofall", image: jaaackImg,
+    socials: [
+      {label: "YouTube", link: "https://www.youtube.com/@jaaackofall"},
+      {label: "Instagram", link: "https://www.instagram.com/jaaackofallyt"},
+      {label: "TikTok", link: "https://www.tiktok.com/@jaaackofall"},
+      {label: "Email", link: "mailto:jaaackofall@gmail.com"},
+    ],
+  },
+  {
+    name: "Jaaack TR", handle: "@jaaackofalltr", image: jaaackTrImg,
+    socials: [
+      {label: "YouTube", link: "https://www.youtube.com/@jaaackofalltr"},
+      {label: "Instagram", link: "https://www.instagram.com/jaaackofalltr"},
+      {label: "TikTok", link: "https://www.tiktok.com/@jaaackofalltr"},
+      {label: "Email", link: "mailto:jaaackofalltr@gmail.com"},
+    ],
+  },
+]
 
 function Home({width, apps}) {
 
@@ -18,9 +41,22 @@ function Home({width, apps}) {
 
         }
 
+        <div className='headline' style={width < 840 ? {flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "2.36em 0"} : {flexDirection: "row"}}>
+
+          <h2>Slipboard is now available on iOS!</h2>
+
+          <a href={"https://apps.apple.com/tr/app/slipboard/id6761312866"}
+            onClick={(e) => e.stopPropagation()}>
+            <button>
+                See on the App Store
+            </button>
+          </a>
+
+        </div>
+
         {apps.map((item, index) => (
 
-            <Link to={item.name == "Routinacci" ? "https://phibonacci.app" : `/${item.name.toLowerCase()}`} className="app" style={{flexWrap: index % 2 == 0 ? "wrap-reverse" : "wrap"}}>
+            <Link to={`/${item.name.toLowerCase()}`} className="app" style={{flexWrap: index % 2 == 0 ? "wrap-reverse" : "wrap"}}>
 
                 {index % 2 != 0 ?
 
@@ -79,6 +115,54 @@ function Home({width, apps}) {
           </Link>
 
         ))}
+
+        <section className="channels">
+
+          <div className="ts">
+
+            <h1>Find me online</h1>
+
+            <span>Follow my two channels on your favorite platform.</span>
+
+          </div>
+
+          <div className="cards">
+
+            {channels.map((c) => (
+
+              <div key={c.name} className="channel">
+
+                <div className="who">
+
+                  <img src={c.image} alt={c.name} />
+
+                  <div className="names">
+
+                    <h2>{c.name}</h2>
+
+                    <span>{c.handle}</span>
+
+                  </div>
+
+                </div>
+
+                <div className="socials">
+
+                  {c.socials.map((so) => (
+
+                    <a key={so.label} href={so.link} {...(so.link.startsWith("http") ? {target: "_blank", rel: "noreferrer"} : {})}>{so.label}</a>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </section>
 
       </main>
 

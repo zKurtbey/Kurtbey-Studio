@@ -5,7 +5,7 @@ export default function Footer() {
 
         <span>© Beren Kurtbey Kara</span>
 
-        <span>kurtbey@phibonacci.app</span>
+        <span>kurtbeystudio@gmail.com</span>
 
       </footer>
     )
