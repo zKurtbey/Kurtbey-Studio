@@ -40,7 +40,7 @@ Play in 6 languages â€” English, Turkish, Italian, German, French and Spanish â€
 
 Build streaks to raise your multiplier and earn coins and surprise prizes. Unlock animated worlds and cute companions, take on the daily challenge, spin the daily wheel, or pass and play with a friend on the same device. Mix mode combines words from several languages in one game, and it all works offline.
 
-Premium is a one-time purchase that unlocks every world, companion and celebration and removes all ads. No subscription.`},{name:`Fold and Crush`,promoText:`Don't tap. Fold.`,download:`iOS`,link:``,image:te,description:`Fold and Crush is the first game you play with the hinge. Your iPhone Duo becomes the weapon: don't tap, fold. Snap the phone shut at just the right moment and squash whatever is caught between the screens.
+Premium is a one-time purchase that unlocks every world, companion and celebration and removes all ads. No subscription.`},{name:`Fold and Crush`,promoText:`Don't tap. Fold.`,download:`iOS`,link:`https://apps.apple.com/app/fold-and-crush/id6833807013`,image:te,description:`Fold and Crush is the first game you play with the hinge. Your iPhone Duo becomes the weapon: don't tap, fold. Snap the phone shut at just the right moment and squash whatever is caught between the screens.
 
 Three games in one. In Roach Crush, waves of cockroaches raid both screens. Tap to squash one, or fold your Duo shut and a black cotton slipper slaps down on the whole swarm. In Mouse Trap, a giant trap sits right across the fold: let the mouse creep in and start nibbling the cheese, then fold to spring the bar. In Book & Fly, the open book is your phone. Wait for the fly to land on a page, then close the cover on it.
 
