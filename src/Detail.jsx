@@ -63,6 +63,31 @@ export default function Detail({width, apps}) {
 
                 </BorderGlow>
 
+                {item.demo && (
+
+                    <BorderGlow
+                        edgeSensitivity={30}
+                        glowColor="40 80 80"
+                        backgroundColor="rgb(124, 255, 218)"
+                        borderRadius={3.82}
+                        glowRadius={40}
+                        glowIntensity={1}
+                        coneSpread={25}
+                        animated={false}
+                        colors={['#c084fc', '#f472b6', '#38bdf8']}
+                    >
+
+                        <a href={item.demo}
+                            onClick={(e) => e.stopPropagation()}>
+                            <button>
+                                Play in your browser
+                            </button>
+                        </a>
+
+                    </BorderGlow>
+
+                )}
+
                 <div className="pp">
 
                     <h1>Privacy Policy</h1>
