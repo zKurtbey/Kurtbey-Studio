@@ -42,6 +42,7 @@ export default function Detail({width, apps}) {
 
                 </div>
 
+                {item.link && (
                 <BorderGlow
                     edgeSensitivity={30}
                     glowColor="40 80 80"
@@ -62,6 +63,7 @@ export default function Detail({width, apps}) {
                 </a>
 
                 </BorderGlow>
+                )}
 
                 {item.demo && (
 
