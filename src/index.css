@@ -116,6 +116,8 @@ header {
 
     width: 100%;
     height: auto;
+    min-height: 26em;
+    padding: 2.36em 0;
     border-radius: 6.18em;
     display: flex;
     align-items: center;
@@ -137,6 +139,7 @@ header {
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      gap: 1.618em;
 
       .ts {
 
